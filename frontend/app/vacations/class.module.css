@@ -1,0 +1,106 @@
+@value accent from '@config/colors.module.css';
+
+/* /////////////////////////////////////////// */
+
+.list-vacations {
+  @apply p-[20px] relative;
+  @apply flex flex-1 flex-col;
+}
+
+/* /////////////////////////////////////////// */
+
+.list-vacations .toolbar {
+  @apply flex flex-row items-center;
+  @apply mb-[20px] mt-[5px] w-[100%];
+}
+
+.list-vacations .toolbar .title {
+  @apply w-[auto] pb-[5px];
+  @apply text-[22px] font-bold;
+  @apply tracking-[1.5px] text-[#000];
+}
+
+.list-vacations .toolbar .functional {
+  @apply flex flex-row;
+  @apply w-[400px] ml-[auto];
+}
+
+.list-vacations .toolbar .text-field {
+  @apply m-[0px];
+}
+
+.list-vacations .toolbar .text-field > div {
+  @apply h-[30px] m-[0px];
+  @apply !p-[0px] !px-[10px];
+  @apply border border-gray-200;
+}
+
+/* /////////////////////////////////////////// */
+
+.list-vacations .toolbar-bottom {
+  @apply flex flex-row mt-[15px];
+}
+
+.list-vacations .toolbar-bottom button {
+  @apply h-[30px] min-h-[30px];
+}
+
+.list-vacations .toolbar-bottom button div[data-role="label"] {
+  @apply !text-[11px];
+}
+
+/* /////////////////////////////////////////// */
+
+.list-vacations .row {
+
+}
+
+.list-vacations .row > div {
+  @apply flex items-center;
+}
+
+.list-vacations .row .date-picker {
+  @apply m-[0px];
+}
+
+.list-vacations .row .date-picker input {
+  @apply font-medium text-center;
+}
+
+.list-vacations .row .date-picker > div {
+  @apply m-[0px] p-[0px] !py-[2px];
+}
+
+.list-vacations .row .date-picker-read > div {
+  @apply !bg-transparent;
+}
+
+/* /////////////////////////////////////////// */
+
+.year-pagination {
+  @apply flex flex-row;
+  @apply items-center select-none;
+}
+
+.year-pagination .year {
+  color: accent;
+  @apply flex flex-col;
+  @apply w-[20px] h-[auto];
+  @apply text-[14px] font-medium;
+  @apply tracking-[1.5px] select-none;
+  @apply items-center justify-center;
+}
+
+.year-pagination .button-ctrl {
+  @apply p-[0px] m-[0px] rounded-[50%];
+}
+
+.year-pagination .button-ctrl:hover {
+  @apply bg-transparent;
+}
+
+.year-pagination .button-ctrl > span > svg {
+  @apply text-[#000] text-[16px] stroke-[2px];
+}
+
+/* /////////////////////////////////////////// */

@@ -1,0 +1,8 @@
+{
+  "name": "EFKO",
+  "start_url": "/",
+  "short_name": "EFKO",
+  "display": "standalone",
+  "theme_color": "#1E1E1E",
+  "background_color": "#1E1E1E"
+}

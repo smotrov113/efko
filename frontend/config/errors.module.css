@@ -1,0 +1,27 @@
+/* /////////////////////////////////////////// */
+
+.page-404 {
+  @apply flex flex-col flex-1;
+  @apply items-center justify-center;
+}
+
+.page-404 .description {
+  @apply mt-[20px] p-[0p];
+  @apply text-[18px] text-[#000];
+  @apply font-medium tracking-[1.5px];
+}
+
+/* /////////////////////////////////////////// */
+
+.page-401 {
+  @apply flex flex-col flex-1;
+  @apply items-center justify-center;
+}
+
+.page-401 .description {
+  @apply mt-[20px] p-[0p];
+  @apply text-[18px] text-[#000];
+  @apply font-medium tracking-[1.5px];
+}
+
+/* /////////////////////////////////////////// */

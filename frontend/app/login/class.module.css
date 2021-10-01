@@ -1,0 +1,20 @@
+/* /////////////////////////////////////////// */
+
+.page-login {
+  @apply flex flex-col flex-1;
+  @apply items-center justify-center;
+  @apply p-[16px] bg-cover bg-no-repeat;
+  background-image: url("/images/bg-1.jpg");
+}
+
+.page-login .container {
+  @apply w-[500px] h-[auto];
+  @apply items-center p-[16px];
+  @apply flex flex-col overflow-hidden;
+  @apply rounded-[16px] bg-[#FFF] shadow-2xl;
+}
+
+.container img { @apply w-[250px] mt-[20px]; }
+.container .form { @apply w-[100%] p-[25px]; }
+
+/* /////////////////////////////////////////// */

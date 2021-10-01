@@ -1,0 +1,15 @@
+/* /////////////////////////////////////////// */
+
+.mui-checkbox {
+  @apply rounded-[50%] p-[0px];
+}
+
+.mui-checkbox svg {
+  @apply text-[22px];
+}
+
+.mui-checkbox:hover {
+  @apply !bg-transparent;
+}
+
+/* /////////////////////////////////////////// */

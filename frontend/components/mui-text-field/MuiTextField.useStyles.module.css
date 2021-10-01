@@ -1,0 +1,53 @@
+@value accent from '@config/colors.module.css';
+@value input-label from '@config/colors.module.css';
+@value input-color from '@config/colors.module.css';
+@value input-background from '@config/colors.module.css';
+
+/* /////////////////////////////////////////// */
+
+.mui-text-field {
+  @apply relative mt-[2px];
+}
+
+.mui-text-field > div {
+  @apply rounded-[8px];
+  @apply p-[4px] mt-[12px];
+  @apply px-[5px] pb-[4px] !important;
+  background-color: input-background;
+}
+
+.mui-text-field > div::after { 
+  @apply hidden;
+}
+.mui-text-field > div::before {
+  @apply hidden;
+}
+
+.mui-text-field > div > input {
+  color: input-color;
+  @apply text-[13px] py-[6px] !important;
+  @apply overflow-ellipsis overflow-hidden;
+}
+
+.mui-text-field > div > textarea {
+  color: input-color;
+  @apply text-[13px] py-[6px];
+}
+
+.mui-text-field > p {
+  color: accent !important;
+  @apply absolute top-[0px] right-[10px];
+  @apply text-[11px] tracking-[0.7px] font-normal select-none;
+}
+
+.mui-text-field > label[data-shrink="true"] {
+  color: input-label;
+  @apply z-[1] ml-[8px] mt-[5px] !important;
+  @apply text-[16px] tracking-[1px] font-bold select-none;
+}
+
+.mui-text-field > label[data-shrink="true"] > span[aria-hidden="true"] {
+  color: #D90404; @apply font-black;
+}
+
+/* /////////////////////////////////////////// */

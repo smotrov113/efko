@@ -1,0 +1,54 @@
+/* /////////////////////////////////////////// */
+
+.list-directors {
+  @apply p-[20px] relative;
+  @apply flex flex-1 flex-col;
+}
+
+/* /////////////////////////////////////////// */
+
+.list-directors .toolbar {
+  @apply flex flex-row items-center;
+  @apply mb-[20px] mt-[5px] w-[100%];
+}
+
+.list-directors .toolbar .title {
+  @apply w-[500px] pb-[5px];
+  @apply text-[22px] font-bold;
+  @apply tracking-[1.5px] text-[#000];
+}
+
+.list-directors .toolbar .functional {
+  @apply flex flex-row;
+  @apply w-[450px] ml-[auto];
+}
+
+.list-directors .toolbar .text-field {
+  @apply m-[0px];
+}
+
+.list-directors .toolbar .text-field > div {
+  @apply h-[30px] m-[0px];
+  @apply !p-[0px] !px-[10px];
+  @apply border border-gray-200;
+}
+
+.list-directors .toolbar button {
+  @apply h-[30px] min-h-[30px];
+}
+
+/* /////////////////////////////////////////// */
+
+.list-directors .toolbar-bottom {
+  @apply flex flex-row mt-[15px];
+}
+
+.list-directors .toolbar-bottom button {
+  @apply h-[30px] min-h-[30px];
+}
+
+.list-directors .toolbar-bottom button div[data-role="label"] {
+  @apply !text-[11px];
+}
+
+/* /////////////////////////////////////////// */

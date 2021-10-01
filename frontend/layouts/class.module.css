@@ -1,0 +1,154 @@
+@value accent from '@config/colors.module.css';
+@value primary from '@config/colors.module.css';
+
+/* /////////////////////////////////////////// */
+
+.main-layouts {
+  @apply flex flex-col flex-1;
+  @apply p-[0px] bg-cover bg-no-repeat;
+  background-image: url("/images/bg-1.jpg");
+}
+
+.main-layouts .wrapper {
+  @apply p-[16px] pl-[0px];
+  @apply flex flex-row flex-1;
+  @apply items-center justify-center;
+}
+
+.main-layouts .menu {
+  @apply min-w-[250px] max-h-[850px];
+  @apply w-[250px] h-[100%] mr-[10px];
+}
+
+.main-layouts .container {
+  @apply w-[100%] h-[100%] mr-[auto];
+  @apply max-w-[1500px] max-h-[850px];
+  @apply flex flex-row overflow-hidden;
+  @apply rounded-[16px] bg-[#FFF] shadow-2xl;
+}
+
+/* /////////////////////////////////////////// */
+
+.toolbar-layouts {
+  @apply flex flex-row w-[100%];
+  @apply justify-center bg-[#000];
+}
+
+.toolbar-layouts > div {
+  @apply w-[100%] h-[100%];
+  @apply flex flex-row px-[25px];
+}
+
+.toolbar-layouts .app-label {
+  @apply flex items-center font-normal;
+  @apply text-[#FFF] text-[14px] tracking-[2px];
+}
+
+.toolbar-layouts .user-block {
+  @apply flex items-center; 
+  @apply h-[100%] px-[10px] cursor-pointer;
+}
+
+.toolbar-layouts .user-block:hover {
+@apply bg-[rgba(255,255,255,0.15)];
+}
+
+.toolbar-layouts .user-label {
+  @apply h-[max-content] ml-[10px] font-medium;
+  @apply text-[#FFF] text-[13px] tracking-[1.5px]; 
+}
+
+/* /////////////////////////////////////////// */
+
+.toolbar-layouts .skeleton-left {
+  @apply flex flex-col justify-center;
+}
+
+.toolbar-layouts .skeleton-right {
+  @apply flex flex-col justify-center items-end;
+}
+
+.toolbar-layouts .skeleton {
+  @apply transform-none bg-[rgba(255,255,255,0.2)];
+}
+
+.toolbar-layouts .skeleton::after {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);
+}
+
+/* /////////////////////////////////////////// */
+
+.menu-popover {
+
+}
+
+.menu-popover > div[tabindex="-1"] {
+  @apply shadow-lg visible;
+  @apply mt-[5px] p-[15px] rounded-[10px];
+}
+
+.menu-popover .row {
+  @apply cursor-pointer px-[5px];
+  @apply flex flex-row items-center;
+}
+
+.menu-popover .icon {
+  @apply h-[max-content];
+}
+
+.menu-popover .label {
+  color: primary;
+  @apply text-[13px] font-medium;
+  @apply tracking-[0.7px] px-[8px];
+}
+
+.menu-popover .icon > svg {
+  color: primary;
+  @apply text-[18px];
+}
+
+.menu-popover .row:hover > .label {
+  color: accent;
+}
+
+.menu-popover .row:hover > .icon > svg {
+  color: accent;
+}
+
+/* /////////////////////////////////////////// */
+
+.menu-layouts {
+  @apply flex flex-col;
+  @apply flex-1 px-[16px];
+}
+
+.menu-layouts > div {
+  @apply w-[100%] h-[100%];
+}
+
+.menu-layouts .row {
+  @apply flex items-center p-[8px];
+  @apply cursor-pointer pl-[12px] my-[4px];
+}
+
+.menu-layouts .row[data-select="true"] {
+  @apply rounded-[15px];
+  @apply bg-[rgba(255,255,255,0.2)];
+}
+
+.menu-layouts .row > div:nth-child(1) {
+  @apply text-[#FFF] mr-[10px];
+  @apply flex w-[max-content] h-[max-content];
+}
+
+.menu-layouts .row > div:nth-child(1) > svg {
+  @apply text-[19px] stroke-[1.5px];
+}
+
+.menu-layouts .row > div:nth-child(2) {
+  @apply text-[#FFF] font-light;
+  @apply text-[14px] tracking-[1px] ml-[4px];
+  @apply flex w-[max-content] h-[max-content];
+}
+
+/* /////////////////////////////////////////// */

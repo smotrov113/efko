@@ -1,0 +1,15 @@
+pip3 install flask
+pip3 install tornado
+pip3 install flask-cors
+pip3 install flask-migrate
+pip3 install psycopg2-binary
+pip3 install flask-sqlalchemy
+
+pip3 install py-kim
+pip3 install SQLAlchemy-Searchable
+
+create extension if not exists "uuid-ossp";
+
+export FLASK_APP=migrate.py; flask db init
+export FLASK_APP=migrate.py; flask db migrate
+export FLASK_APP=migrate.py; flask db upgrade
